@@ -1,0 +1,21 @@
+# ninja log v7
+1	27	1785350090782685847	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	90ac43fd73c20203
+1	27	1785350090782685847	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir	90ac43fd73c20203
+27	28805	1785350119560919626	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	2c27d95adf0d2b97
+27	28805	1785350119560919626	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download	2c27d95adf0d2b97
+28805	28945	1785350119561919634	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	45ddd504185a9ce
+28805	28945	1785350119561919634	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update	45ddd504185a9ce
+28946	28984	1785350119739921091	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	949325dcb55c3a21
+28946	28984	1785350119739921091	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch	949325dcb55c3a21
+28984	29016	1785350119771921354	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	71b6b40084282f39
+28984	29016	1785350119771921354	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure	71b6b40084282f39
+29016	29043	1785350119798921576	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d77d74934500f7a6
+29016	29043	1785350119798921576	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build	d77d74934500f7a6
+29043	29073	1785350119828921821	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	f6761778842b9b37
+29043	29073	1785350119828921821	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install	f6761778842b9b37
+29073	29098	1785350119853922026	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	b5df4d6d7d4d01f4
+29073	29098	1785350119853922026	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test	b5df4d6d7d4d01f4
+29098	29136	1785350119890922330	CMakeFiles/raylib-populate-complete	ecd7958c466f26f0
+29098	29136	1785350119890922330	raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	ecd7958c466f26f0
+29098	29136	1785350119890922330	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete	ecd7958c466f26f0
+29098	29136	1785350119890922330	/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-done	ecd7958c466f26f0

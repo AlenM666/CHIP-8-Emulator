@@ -1,0 +1,78 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/loki/.dotnet/tools/"
+      - "/home/loki/.config/emacs/bin/"
+      - "/home/loki/.cargo/bin/"
+      - "/home/loki/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/var/lib/flatpak/exports/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/usr/lib/emacs/30.2/x86_64-pc-linux-gnu/"
+      - "/bin/"
+    searched_directories:
+      - "/home/loki/.dotnet/tools/uname"
+      - "/home/loki/.config/emacs/bin/uname"
+      - "/home/loki/.cargo/bin/uname"
+      - "/home/loki/.local/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/loki/.dotnet/tools"
+        - "/home/loki/.config/emacs/bin/"
+        - "/home/loki/.dotnet/tools"
+        - "/home/loki/.cargo/bin"
+        - "/home/loki/.local/bin"
+        - "/home/loki/.cargo/bin"
+        - "/home/loki/.local/bin"
+        - "/home/loki/.cargo/bin"
+        - "/home/loki/.local/bin"
+        - "/home/loki/.cargo/bin"
+        - "/home/loki/.local/bin"
+        - "/home/loki/.local/bin"
+        - "/home/loki/.cargo/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/var/lib/flatpak/exports/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/usr/lib/emacs/30.2/x86_64-pc-linux-gnu"
+        - "/home/loki/.cargo/bin/"
+        - "/home/loki/.local/bin/"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 6.18.38-1-MANJARO - x86_64
+...

@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/cmake_install.cmake",
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/cmake_install.cmake",
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/cmake_install.cmake",
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake",
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/external/glfw/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

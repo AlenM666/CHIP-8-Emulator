@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
