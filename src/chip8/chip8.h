@@ -33,7 +33,7 @@ typedef struct
 }Chip8;
 
 void chip8_init(Chip8 *chip8);
-void chip8_load_rom(Chip8 *chip8, const char *filename);
+bool chip8_load_rom(Chip8 *chip8, const char *filename);
 
 static uint8_t random_byte(void);
 static void clear_display(Chip8 *chip8);

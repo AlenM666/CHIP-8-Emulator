@@ -44,3 +44,47 @@ void chip8_init(Chip8 *chip8)
     srand((unsigned int)time(NULL));
 }
 
+
+bool chip8_load_rom(Chip8 *chip8, const char *filename)
+{
+    FILE *file = fopen(filename, "rd");
+    if (file == NULL)
+    {
+        fprintf(stderr,"Failed to open ROM: %s\n", filename);
+        return false;
+    }
+
+    if (fseek(file, 0, SEEK_END) != 0)
+    {
+        fprintf(stderr, "Failed to seek ROM: %s\n", filename);
+        fclose(file);
+        return false;
+    }
+
+    const long size = ftell(file);
+    if (size <=0)
+    {
+        fprintf(stderr, "ROM is empty or unredable: %s\n", filename);
+        fclose(file);
+        return false;
+    }
+
+    if ((size_t)size > CHIP8_MEMORY_SIZE - CHIP8_PROGRAM_START)
+    {
+        fprintf(stderr, "Rom to large: %ld bytes, max %u bytes", size, CHIP8_MEMORY_SIZE - CHIP8_PROGRAM_START);
+        fclose(file);
+        return false;
+    }
+
+    rewind(file);
+    const size_t read_bytes = fread(&chip8->memory[CHIP8_PROGRAM_START], 1, (size_t)size, file);
+    fclose(file);
+
+    if (read_bytes != (size_t)size)
+    {
+        fprintf(stderr, "Failed to read complete ROM: %s\n", filename);
+        return false;
+    }
+
+    return true;
+}
