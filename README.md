@@ -44,6 +44,8 @@ If no ROM path is passed on the command line, the emulator defaults to `game/pon
 
 ## Memory Map
 
+
+```
 +---------------+= 0xFFF (4095) End of Chip-8 RAM
 |               |
 |               |
@@ -66,6 +68,9 @@ If no ROM path is passed on the command line, the emulator defaults to `game/pon
 | Reserved for  |
 |  interpreter  |
 +---------------+= 0x000 (0) Start of Chip-8 RAM
+
+```
+
 
 
 <br>
