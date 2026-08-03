@@ -40,6 +40,37 @@ $ sh run.sh
 If no ROM path is passed on the command line, the emulator defaults to `game/pong.rom`.
 
 
+
+
+## Memory Map
+
++---------------+= 0xFFF (4095) End of Chip-8 RAM
+|               |
+|               |
+|               |
+|               |
+|               |
+| 0x200 to 0xFFF|
+|     Chip-8    |
+| Program / Data|
+|     Space     |
+|               |
+|               |
+|               |
++- - - - - - - -+= 0x600 (1536) Start of ETI 660 Chip-8 programs
+|               |
+|               |
+|               |
++---------------+= 0x200 (512) Start of most Chip-8 programs
+| 0x000 to 0x1FF|
+| Reserved for  |
+|  interpreter  |
++---------------+= 0x000 (0) Start of Chip-8 RAM
+
+
+<br>
+
+
 ## Controls
 
 The original CHIP-8 keypad is mapped onto your keyboard like this:
@@ -66,4 +97,5 @@ For Pong specifically, the common controls are:
 
 ## Resources
 - https://en.wikipedia.org/wiki/CHIP-8
+- https://tobiasvl.github.io/blog/write-a-chip-8-emulator/
 - https://jborza.com/post/2020-12-07-chip-8/

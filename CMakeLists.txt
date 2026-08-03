@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
 set(CMAKE_C_COMPILER clang)
-set(CMAKE_CXX_COMPILER clang++)
 
 # =============================================================================
 # Project
@@ -9,7 +8,7 @@ set(CMAKE_CXX_COMPILER clang++)
 project(CHIP8
     VERSION 0.1.0
     DESCRIPTION "CHIP8"
-    LANGUAGES C CXX
+    LANGUAGES C
 )
 
 if(CMAKE_SOURCE_DIR STREQUAL CMAKE_BINARY_DIR)
@@ -19,12 +18,9 @@ endif()
 # =============================================================================
 # Global Settings
 # =============================================================================
-set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_COLOR_DIAGNOSTICS ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -41,7 +37,7 @@ option(ENABLE_WARNINGS_AS_ERRORS  "Warnings as errors"               OFF)
 option(ENABLE_LTO                 "Enable Link Time Optimization"     ON)
 option(ENABLE_SANITIZERS          "Enable sanitizers (Debug only)"    OFF)
 option(ENABLE_UNITY_BUILD         "Enable unity builds"               OFF)
-option(ENABLE_PCH                 "Enable precompiled headers"        ON)
+option(ENABLE_PCH                 "Enable precompiled headers"        OFF)
 option(ENABLE_NATIVE_OPTIMIZATION "Enable -march=native"              OFF)
 
 # =============================================================================
@@ -51,11 +47,9 @@ find_program(CCACHE_PROGRAM  ccache)
 find_program(SCCACHE_PROGRAM sccache)
 
 if(CCACHE_PROGRAM)
-    set(CMAKE_C_COMPILER_LAUNCHER   ${CCACHE_PROGRAM})
-    set(CMAKE_CXX_COMPILER_LAUNCHER ${CCACHE_PROGRAM})
+    set(CMAKE_C_COMPILER_LAUNCHER ${CCACHE_PROGRAM})
 elseif(SCCACHE_PROGRAM)
-    set(CMAKE_C_COMPILER_LAUNCHER   ${SCCACHE_PROGRAM})
-    set(CMAKE_CXX_COMPILER_LAUNCHER ${SCCACHE_PROGRAM})
+    set(CMAKE_C_COMPILER_LAUNCHER ${SCCACHE_PROGRAM})
 endif()
 
 # =============================================================================
@@ -97,6 +91,7 @@ FetchContent_MakeAvailable(raylib)
 set(SRC_FILES
     src/main.c
     src/window/window.c
+    # src/chip8/chip8.c
     )
 
 foreach(src ${SRC_FILES})
@@ -109,6 +104,14 @@ endforeach()
 # Target
 # =============================================================================
 add_executable(${PROJECT_NAME} ${SRC_FILES})
+
+enable_testing()
+add_executable(chip8_core_tests
+    tests/chip8_core_tests.c
+    src/chip8/chip8.c
+)
+target_include_directories(chip8_core_tests PRIVATE ${PROJECT_SOURCE_DIR}/src)
+add_test(NAME chip8_core_tests COMMAND chip8_core_tests)
 
 target_include_directories(${PROJECT_NAME}
     PRIVATE
@@ -182,9 +185,6 @@ if(ENABLE_WARNINGS)
             -Wconversion
             -Wnull-dereference
             -Wformat=2
-            -Wnon-virtual-dtor
-            -Woverloaded-virtual
-            -Wold-style-cast
             -Wcast-align
             -Wunused
             -fdiagnostics-color=always
@@ -205,7 +205,6 @@ if(ENABLE_WARNINGS)
                 -Wcomma
                 -Wfloat-equal
                 -Wconditional-uninitialized
-                -Wabstract-vbase-init
                 -Wsign-conversion
                 -Wimplicit-fallthrough
             )
@@ -248,9 +247,9 @@ endif()
 # Link Time Optimization
 # =============================================================================
 
-if(ENABLE_LTO)
+if(ENABLE_LTO AND CMAKE_BUILD_TYPE STREQUAL "Release")
     include(CheckIPOSupported)
-    check_ipo_supported(RESULT supported OUTPUT error)
+    check_ipo_supported(RESULT supported OUTPUT error LANGUAGES C)
     if(supported)
         set_target_properties(${PROJECT_NAME} PROPERTIES
             INTERPROCEDURAL_OPTIMIZATION_RELEASE TRUE
@@ -313,8 +312,7 @@ message(STATUS "│  Build type : ${CMAKE_BUILD_TYPE}")
 message(STATUS "│  C std    : C${CMAKE_C_STANDARD}")
 message(STATUS "│  Compiler   : ${CMAKE_C_COMPILER_ID} ${CMAKE_C_COMPILER_VERSION}")
 message(STATUS "│  Output     : ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
-# message(STATUS "│  FXTUI      : FetchContent (7.0.1)")
-message(STATUS "│  Raylib     : FetchContent (5.5)")
+message(STATUS "│  Raylib     : FetchContent (6.0)")
 message(STATUS "│  LTO        : ${ENABLE_LTO}")
 message(STATUS "│  Sanitizers : ${ENABLE_SANITIZERS}")
 message(STATUS "│  PCH        : ${ENABLE_PCH}")
