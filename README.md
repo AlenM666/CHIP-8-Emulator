@@ -16,6 +16,8 @@ if you want to install it system wide.
 - **Arch:** `sudo pacman -S raylib`
 
 
+<br>
+
 
 ## Getting a ROM
 
@@ -40,6 +42,7 @@ $ sh run.sh
 If no ROM path is passed on the command line, the emulator defaults to `game/pong.rom`.
 
 
+<br>
 
 
 ## Memory Map
@@ -93,6 +96,8 @@ For Pong specifically, the common controls are:
 - Player 2 (right paddle): `4` (up) / `R` (down)
 
 (Exact keys depend on the ROM variant — check the ROM's documentation if paddles don't move as expected.)
+
+<br>
 
 ## Notes
 
