@@ -10,7 +10,7 @@
       # ./build/debug/bin/CHIP8
 #
 #   With sanitizers:
-cmake -B build/debug -G Ninja  -DCMAKE_BUILD_TYPE=Debug -DENABLE_PCH=OFF
+cmake -B build/debug -G Ninja -DCMAKE_BUILD_TYPE=Debug -DENABLE_PCH=OFF
 cmake --build build/debug
 ./build/debug/bin/CHIP8 "$@"
 #

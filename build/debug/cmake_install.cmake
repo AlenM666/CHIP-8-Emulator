@@ -1,4 +1,4 @@
-# Install script for directory: /home/loki/Documents/programing/projects/c/CHIP-8
+# Install script for directory: /home/loki/Documents/programing/projects/c/CHIP-8-Emulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/cmake_install.cmake")
+  include("/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CHIP8"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/bin/CHIP8")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/bin/CHIP8")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CHIP8" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/CHIP8")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -66,7 +66,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/install_local_manifest.txt"
+  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -82,6 +82,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -20,41 +20,27 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/loki/.dotnet/tools/"
       - "/home/loki/.config/emacs/bin/"
-      - "/home/loki/.cargo/bin/"
+      - "/usr/bin/"
+      - "/home/loki/.npm-global/bin/"
       - "/home/loki/.local/bin/"
+      - "/home/loki/.cargo/bin/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
-      - "/usr/bin/"
       - "/var/lib/flatpak/exports/bin/"
       - "/usr/lib/jvm/default/bin/"
       - "/usr/bin/site_perl/"
       - "/usr/bin/vendor_perl/"
       - "/usr/bin/core_perl/"
-      - "/usr/lib/emacs/30.2/x86_64-pc-linux-gnu/"
       - "/bin/"
     searched_directories:
-      - "/home/loki/.dotnet/tools/uname"
       - "/home/loki/.config/emacs/bin/uname"
-      - "/home/loki/.cargo/bin/uname"
-      - "/home/loki/.local/bin/uname"
-      - "/usr/local/sbin/uname"
-      - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/loki/.dotnet/tools"
-        - "/home/loki/.config/emacs/bin/"
-        - "/home/loki/.dotnet/tools"
-        - "/home/loki/.cargo/bin"
-        - "/home/loki/.local/bin"
-        - "/home/loki/.cargo/bin"
-        - "/home/loki/.local/bin"
-        - "/home/loki/.cargo/bin"
-        - "/home/loki/.local/bin"
-        - "/home/loki/.cargo/bin"
-        - "/home/loki/.local/bin"
+        - "/home/loki/.config/emacs/bin"
+        - "/usr/bin"
+        - "/home/loki/.npm-global/bin"
         - "/home/loki/.local/bin"
         - "/home/loki/.cargo/bin"
         - "/usr/local/sbin"
@@ -65,14 +51,13 @@ events:
         - "/usr/bin/site_perl"
         - "/usr/bin/vendor_perl"
         - "/usr/bin/core_perl"
-        - "/usr/lib/emacs/30.2/x86_64-pc-linux-gnu"
         - "/home/loki/.cargo/bin/"
         - "/home/loki/.local/bin/"
   -
     kind: "message-v1"
     backtrace:
-      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Linux - 6.18.38-1-MANJARO - x86_64
+      The system is: Linux - 6.18.39-1-MANJARO - x86_64
 ...

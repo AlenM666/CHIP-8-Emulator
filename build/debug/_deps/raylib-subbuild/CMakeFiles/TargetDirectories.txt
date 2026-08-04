@@ -1,3 +1,3 @@
-/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
-/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
-/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir
+/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.dir
+/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/edit_cache.dir
+/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/rebuild_cache.dir

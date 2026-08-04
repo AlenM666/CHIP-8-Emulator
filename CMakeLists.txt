@@ -91,7 +91,7 @@ FetchContent_MakeAvailable(raylib)
 set(SRC_FILES
     src/main.c
     src/window/window.c
-    # src/chip8/chip8.c
+    src/chip8/chip8.c
     )
 
 foreach(src ${SRC_FILES})

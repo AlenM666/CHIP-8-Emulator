@@ -1,10 +1,7 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef WINDOW_H_
+#define WINDOW_H_
 
-#include "raylib.h"
+int run_emulator(const char *rom_path);
 
+#endif // WINDOW_H_
 
-void create_window(void);
-
-
-#endif // WINDOW_H

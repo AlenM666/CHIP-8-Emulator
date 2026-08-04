@@ -4,7 +4,7 @@
 
 int main(int argc, char **argv)
 {
-    const char *from_path = argc > 1 ? argv[1] : "game/ibm.ch8";
+    const char *rom_path = argc > 1 ? argv[1] : "game/ibm.ch8";
 
     if (argc > 2)
     {
@@ -12,8 +12,5 @@ int main(int argc, char **argv)
         return 2;
     }
 
-    create_window();
-    return 0;
+    return run_emulator(rom_path);
 }
-
-

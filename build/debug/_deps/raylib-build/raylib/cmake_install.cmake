@@ -1,4 +1,4 @@
-# Install script for directory: /home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-src/src
+# Install script for directory: /home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,34 +44,34 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake")
+  include("/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/external/glfw/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/libraylib.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/libraylib.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-src/src/raylib.h"
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-src/src/rcamera.h"
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-src/src/rlgl.h"
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-src/src/raymath.h"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-src/src/raylib.h"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-src/src/rcamera.h"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-src/src/rlgl.h"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-src/src/raymath.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/raylib.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/raylib.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/raylib-config-version.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/raylib-config-version.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/raylib-config-version.cmake"
-    "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/raylib-config.cmake"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/raylib-config-version.cmake"
+    "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/raylib-config.cmake"
     )
 endif()
 
@@ -79,7 +79,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib/raylib-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib/raylib-targets.cmake"
-         "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets.cmake")
+         "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib/raylib-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -92,15 +92,15 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/raylib" TYPE FILE FILES "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/CMakeFiles/Export/3f9a69e8808e76b29b64bee1688b3b35/raylib-targets-debug.cmake")
   endif()
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-build/raylib/install_local_manifest.txt"
+  file(WRITE "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-build/raylib/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -2,37 +2,37 @@
 	"sources" : 
 	[
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/CMakeFiles/raylib-populate-complete.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-build.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-configure.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-download.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-install.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-mkdir.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-patch.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-test.rule"
 		},
 		{
-			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule"
+			"file" : "/home/loki/Documents/programing/projects/c/CHIP-8-Emulator/build/debug/_deps/raylib-subbuild/raylib-populate-prefix/src/raylib-populate-stamp/raylib-populate-update.rule"
 		}
 	],
 	"target" : 
